@@ -9,19 +9,57 @@ main
                 li.header__logo-item.contacts Контакты
     section.main
         .main__cards
-            .main__card
-                p.main__card-text.design-text Design
-                .main__card-img
-                    +image('laptop.jpeg').design
-            .main__card
-                p.main__card-text.possm-text Posm
-                .main__card-img
-                    +image('MBA.jpeg').mba
-            .main__card
-                p.main__card-text.merch-text Merch
-                .main__card-img
-                    +image('case.jpeg').merch
-            .main__card
-                p.main__card-text.event-text Event
-                .main__card-img
-                    +image('party.jpeg').event
+            .card
+                .card__title
+                    p.card__text.design Design
+                    .card__img.design-img
+                        +image('laptop.jpeg')
+                .card__back
+                    p.card__text.design.back Design
+                    .card__img.back-img
+                        +image("activeBg.png")
+
+
+            .card
+                .card__title
+                    p.card__text.design Design
+                    .card__img.design-img
+                        +image('laptop.jpeg')
+                .card__back
+                    p.card__text.design.back Design
+                    .card__img.back-img
+                        +image("activeBg.png")
+
+            .card
+                .card__title
+                    p.card__text.design Design
+                    .card__img.design-img
+                        +image('laptop.jpeg')
+                .card__back
+                    p.card__text.design.back Design
+                    .card__img.back-img
+                        +image("activeBg.png")
+
+            .card
+                .card__title
+                    p.card__text.design Design
+                    .card__img.design-img
+                        +image('laptop.jpeg')
+                .card__back
+                    p.card__text.design.back Design
+                    .card__img.back-img
+                        +image("activeBg.png")
+
+
+            //.main__card
+            //    p.main__card-text.possm-text Posm
+            //    .main__card-img
+            //        +image('MBA.jpeg').mba
+            //.main__card
+            //    p.main__card-text.merch-text Merch
+            //    .main__card-img
+            //        +image('case.jpeg').merch
+            //.main__card
+            //    p.main__card-text.event-text Event
+            //    .main__card-img
+            //        +image('party.jpeg').event

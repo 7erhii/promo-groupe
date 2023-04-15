@@ -31,71 +31,119 @@
 // MAIN _____ CARDS _______________
 
 .main {
+  margin-top: 110px;
   &__cards {
     display: flex;
     justify-content: space-between;
   }
-  &__card {
+}
+
+.card {
+  position: relative;
+  &__title {
+
+    //display: none;
+    position: relative;
+    width: 372px;
+    height: 667px;
+    //background: rgba(0, 0, 255, 0.05);
+
+
+    transform: rotateY();
+  }
+  &__text {
+    position: absolute;
+    line-height: 96px;
+    letter-spacing: 14px;
+    font-size: 89px;
+    font-weight: 800;
+    transform: rotate(-90deg);
+    transform-origin: left;
+    bottom: 0;
+    left: 300px;
+  }
+
+  &__back {
+    //display: none;
     position: relative;
     width: 372px;
     height: 667px;
     background: rgba(0, 0, 255, 0.05);
-    display: flex;
-    justify-content: flex-end;
-    &-text {
-      position: absolute;
-      font-size: 88px;
-      line-height: 96px;
-      font-weight: 900;
-      letter-spacing: 12px;
-      bottom: 400px;
-      right: 0;
-      transform: rotate(-90deg);
-      transform-origin: bottom right;
+
+
+    & p {
+      color: #fff;
+    }
+
+    & img {
+      width: 100%;
+      height: 676px;
+      bottom: 0;
     }
   }
 }
 
-.design {
-  height: 50%;
+.design-img img {
   position: absolute;
+  width: 50%;
   bottom: 0;
-  left: 0;
 }
-.main__card-img > .mba {
-  height: 43%;
+
+.posm-img img {
   position: absolute;
+  width: 100%;
   top: 0;
-  left: 0;
 }
-
-.merch {
+.merch-img img {
   position: absolute;
-  height: 50%;
-  left: 0;
+  width: 50%;
+  top: 0;
 }
 
-.design-text {
-  bottom: 415px;
-}
-
-.event {
+.event-img img {
   position: absolute;
-  width: 70%;
+  width: 50%;
+  bottom: 0;
+}
+//________-flipping
+
+.card__title {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.6s ease-out;
+
+}
+
+.card__back {
+  position: absolute;
   bottom: 0;
   left: 0;
+  opacity: 0;
+  transform: rotateY(-90deg);
+  transition: opacity 0.3s ease-in, transform 0.6s ease-out;
+
 }
 
-.possm-text {
-  bottom: 330px;
-}
-.merch-text {
-  bottom: 370px;
+.card:hover .card__title {
+
+  transform: rotateY(90deg);
 }
 
-.event-text {
-  bottom: 350px;
+.card:hover .card__back {
+  opacity: 1;
+  transform: rotateY(0deg);
+  transition-delay: 590ms;
+
 }
 
+.card:hover .card__back {
+  opacity: 1;
+  transform: rotateY(0deg);
 
-// _____________________________________________
+}
+
+.card:hover .card__title {
+  transform: rotateY(-90deg);
+
+}
+

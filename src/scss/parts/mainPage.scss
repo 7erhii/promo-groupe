@@ -35,94 +35,67 @@
     display: flex;
     justify-content: space-between;
   }
-}
-
-.card {
-  position: relative;
-  &__title {
-
-    //display: none;
+  &__card {
     position: relative;
     width: 372px;
     height: 667px;
-    //background: rgba(0, 0, 255, 0.05);
-
-
-    transform: rotateY();
-  }
-  &__text {
-    position: absolute;
-    line-height: 96px;
-    letter-spacing: 14px;
-    font-size: 89px;
-    font-weight: 800;
-    transform: rotate(-90deg);
-    transform-origin: left;
-    bottom: 0;
-    left: 300px;
-  }
-
-  &__back {
-    //display: none;
-    position: relative;
-    width: 372px;
-    height: 667px;
-    //background: rgba(0, 0, 255, 0.05);
-
-    & p {
-      color: #fff;
-    }
-
-    & img {
-      width: 100%;
+    background: rgba(0, 0, 255, 0.05);
+    display: flex;
+    justify-content: flex-end;
+    &-text {
+      position: absolute;
+      font-size: 88px;
+      line-height: 96px;
+      font-weight: 900;
+      letter-spacing: 12px;
+      bottom: 400px;
+      right: 0;
+      transform: rotate(-90deg);
+      transform-origin: bottom right;
     }
   }
 }
 
-.design-img img {
+.design {
+  height: 50%;
   position: absolute;
-  width: 50%;
   bottom: 0;
+  left: 0;
 }
-//________-flipping
-
-.card__title {
-  position: relative;
-  z-index: 2;
-  transition: transform 0.6s ease-out;
-
-}
-
-.card__back {
+.main__card-img > .mba {
+  height: 43%;
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
-  transform: rotateY(-90deg);
-  transition: opacity 0.3s ease-in, transform 0.6s ease-out;
-
 }
 
-.card:hover .card__title {
-
-  transform: rotateY(90deg);
+.merch {
+  position: absolute;
+  height: 50%;
+  left: 0;
 }
 
-.card:hover .card__back {
-  opacity: 1;
-  transform: rotateY(0deg);
-  transition-delay: 590ms;
-
+.design-text {
+  bottom: 415px;
 }
 
-.card:hover .card__back {
-  opacity: 1;
-  transform: rotateY(0deg);
-
+.event {
+  position: absolute;
+  width: 70%;
+  bottom: 0;
+  left: 0;
 }
 
-.card:hover .card__title {
-  transform: rotateY(-90deg);
-
+.possm-text {
+  bottom: 330px;
+}
+.merch-text {
+  bottom: 370px;
 }
 
+.event-text {
+  bottom: 350px;
+}
+
+
+// _____________________________________________

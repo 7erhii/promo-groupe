@@ -4,6 +4,8 @@
 mixin image(file)
 	img(src=require(`../assets/images/${file}`), alt='', class!=attributes.class)
 
+	//+image('icons/burger-logo.svg')
+
 mixin card(image, subImage, title, autor)
 	.card__item
 		.card__image 

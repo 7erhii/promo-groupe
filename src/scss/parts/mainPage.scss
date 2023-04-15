@@ -1,0 +1,101 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  //padding-bottom: 68px;
+  padding-top: 68px;
+  //height: 67px;
+
+  &__logo {
+    height: 67px;
+  &-item {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    &:hover {
+      color: #0000FF;
+    }
+  }
+  }
+
+  &__menu {
+    align-self: center;
+
+  }
+  &__list {
+    width: 551px;
+    display: flex;
+    justify-content: space-between;
+    //text-align: center;
+  }
+}
+// MAIN _____ CARDS _______________
+
+.main {
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card {
+    position: relative;
+    width: 372px;
+    height: 667px;
+    background: rgba(0, 0, 255, 0.05);
+    display: flex;
+    justify-content: flex-end;
+    &-text {
+      position: absolute;
+      font-size: 88px;
+      line-height: 96px;
+      font-weight: 900;
+      letter-spacing: 12px;
+      bottom: 400px;
+      right: 0;
+      transform: rotate(-90deg);
+      transform-origin: bottom right;
+    }
+  }
+}
+
+.design {
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.main__card-img > .mba {
+  height: 43%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.merch {
+  position: absolute;
+  height: 50%;
+  left: 0;
+}
+
+.design-text {
+  bottom: 415px;
+}
+
+.event {
+  position: absolute;
+  width: 70%;
+  bottom: 0;
+  left: 0;
+}
+
+.possm-text {
+  bottom: 330px;
+}
+.merch-text {
+  bottom: 370px;
+}
+
+.event-text {
+  bottom: 350px;
+}
+
+
+// _____________________________________________

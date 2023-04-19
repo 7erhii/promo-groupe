@@ -1,0 +1,71 @@
+include mixin/_image
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(
+			name="viewport",
+			content="width=device-width, initial-scale=1.0, maximum-scale=1"
+		)
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		link(
+			rel="shortcut icon",
+			href=require(`../assets/images/favicon.png`),
+			type="image/png"
+		)
+		title Empty Project
+
+		script(
+			src="https://kit.fontawesome.com/23b8fb4e42.js",
+			crossorigin="anonymous"
+		)
+
+	body
+		.wrapper
+			.main
+				include parts/header
+				section.contacts-page
+					.contacts 
+						.contacts-content
+							.office
+								.office__title
+									H2.office__title-text.title-text Офис
+								.office__phone
+									.office__phone-content
+										.office__phone-title.titles Телефон
+										.office__phone-subtitle.subtitles 
+											a(href="") 8 800 500 6340
+								.office__mail
+									.office__mail-content
+										.office__mail-title.titles E-mail
+										.office__mail-subtitle.subtitles 
+											a(href="") order@promogroup.ru
+								.office__hours
+									.office__hours-content
+										.office__hours-title.titles Часы работы офиса
+										.office__hours-subtitle.subtitles пн-пт с 9:30 до 18:30
+								.office__adress
+									.office__adress-content
+										.office__adress-title.titles Адрес
+										.office__adress-subtitle.subtitles 4221, City, ул. Электродная, д.2
+										.office__adress-link.links 
+											a(href="") Посмотреть схему проезда
+
+							.fold 
+								.fold__title
+									H2.fold__title-text.title-text Офис
+								.fold__hours
+									.fold__hours-title.titles Часы работы офиса
+									.fold__hours-subtitle.subtitles пн-пт с 9:00 до 18:00
+								.fold__adress
+									.fold__adress-title.titles Адрес
+									.fold__adress-subtitle.subtitles City, ул. Ткацкая 4221
+									.fold__adress-link.links 
+										a(href="") Посмотреть схему проезда
+
+						.contacts-btn
+					.form 
+						.form-content
+						.form-btn 
+				include parts/footer

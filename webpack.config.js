@@ -54,7 +54,23 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      filename: 'index.html',
       template: "src/views/index.pug",
+      minify: false,
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'projects.html',
+      template: "src/views/projects.pug",
+      minify: false,
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'contacts.html',
+      template: "src/views/contacts.pug",
+      minify: false,
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'about.html',
+      template: "src/views/about.pug",
       minify: false,
     }),
     new MiniCssExtractPlugin({

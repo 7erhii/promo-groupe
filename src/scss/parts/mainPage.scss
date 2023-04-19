@@ -1,6 +1,10 @@
 .wrapper {
   //background: #3e4f93;
 }
+.main {
+  display: flex;
+  flex-direction: column;
+}
 
 .header {
   display: flex;

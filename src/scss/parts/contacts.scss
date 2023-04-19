@@ -1,21 +1,47 @@
 .contacts-page {
 	display: flex;
+	margin-top: 60px;
 }
 
 .contacts {
 	width: 50%;
+	&-content {
+		display: flex;
+	}
+}
+.office {
+	width: 50%;
 }
 
-// .office {
-// 	width: 50%;
-// 	// background: palevioletred;
-// }
-
-// .fold {
-// 	width: 50%;
-// 	// background: rgb(97, 51, 67);
-// }
-
+.fold {
+	width: 50%;
+}
+.title-text {
+	font-size: 34px;
+	font-weight: 800;
+	line-height: 40px;
+	letter-spacing: 4px;
+	margin-bottom: 40px;
+}
+.titles {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	color: #616161;
+	margin-bottom: 10px;
+}
+.subtitles {
+	font-size: 16px;
+	font-weight: 800;
+	color: #333333;
+	& a {
+		color: #5d0707;
+	}
+}
+.box-mb {
+	margin-bottom: 30px;
+}
+// ______________FORM
 .form {
 	width: 50%;
 	// height: 100%;

@@ -29,23 +29,23 @@ html(lang="en")
 					.contacts 
 						.contacts-content
 							.office
-								.office__title
+								.office__title.box-mb
 									H2.office__title-text.title-text Офис
-								.office__phone
+								.office__phone.box-mb
 									.office__phone-content
 										.office__phone-title.titles Телефон
 										.office__phone-subtitle.subtitles 
 											a(href="") 8 800 500 6340
-								.office__mail
+								.office__mail.box-mb
 									.office__mail-content
 										.office__mail-title.titles E-mail
 										.office__mail-subtitle.subtitles 
 											a(href="") order@promogroup.ru
-								.office__hours
+								.office__hours.box-mb
 									.office__hours-content
 										.office__hours-title.titles Часы работы офиса
 										.office__hours-subtitle.subtitles пн-пт с 9:30 до 18:30
-								.office__adress
+								.office__adress.box-mb
 									.office__adress-content
 										.office__adress-title.titles Адрес
 										.office__adress-subtitle.subtitles 4221, City, ул. Электродная, д.2
@@ -53,22 +53,24 @@ html(lang="en")
 											a(href="") Посмотреть схему проезда
 
 							.fold 
-								.fold__title
-									H2.fold__title-text.title-text Офис
-								.fold__hours
+								.fold__title.box-mb
+									H2.fold__title-text.title-text Склад
+								.fold__hours.box-mb
 									.fold__hours-title.titles Часы работы офиса
 									.fold__hours-subtitle.subtitles пн-пт с 9:00 до 18:00
-								.fold__adress
+								.fold__adress.box-mb
 									.fold__adress-title.titles Адрес
 									.fold__adress-subtitle.subtitles City, ул. Ткацкая 4221
 									.fold__adress-link.links 
 										a(href="") Посмотреть схему проезда
-
 						.contacts-btn
+							a(href="") 
+								button.contacts-btn__download Скачать реквизиты компании
+
 					.form 
 						.form-content
 							.form__title
-								H2.fold__title-text.title-text Офис
+								H2.fold__title-text.title-text Оставить заявку
 							.form-fields
 								.form-field.name 
 									input(type="text", placeholder="Имя")
@@ -86,4 +88,6 @@ html(lang="en")
 									| (&scy;&tcy;.9 &Fcy;&Zcy; &ocy;&tcy; 27.07.2006 &numero;152-&Fcy;&Zcy; &laquo;&Ocy; &pcy;&iecy;&rcy;&scy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&ycy;&khcy; &dcy;&acy;&ncy;&ncy;&ycy;&khcy;&raquo;)
 
 						.form-btn 
+							a(href="") 
+								button.form-btn__send Отправить запрос
 				include parts/footer

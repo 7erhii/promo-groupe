@@ -1,8 +1,23 @@
+.contacts-page {
+	display: flex;
+}
+
 .contacts {
 	width: 50%;
-	background: rgba(255, 0, 0, 0.306);
 }
+
+// .office {
+// 	width: 50%;
+// 	// background: palevioletred;
+// }
+
+// .fold {
+// 	width: 50%;
+// 	// background: rgb(97, 51, 67);
+// }
 
 .form {
 	width: 50%;
+	// height: 100%;
+	background: rgba(172, 119, 119, 0.62);
 }

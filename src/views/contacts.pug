@@ -35,12 +35,12 @@ html(lang="en")
 									.office__phone-content
 										.office__phone-title.titles Телефон
 										.office__phone-subtitle.subtitles 
-											a(href="") 8 800 500 6340
+											a(href="tel:+78005006340") 8 800 500 6340
 								.office__mail.box-mb
 									.office__mail-content
 										.office__mail-title.titles E-mail
 										.office__mail-subtitle.subtitles 
-											a(href="") order@promogroup.ru
+											a(href="mailto:order@promogroup.boo") order@promogroup.boo
 								.office__hours.box-mb
 									.office__hours-content
 										.office__hours-title.titles Часы работы офиса
@@ -68,18 +68,21 @@ html(lang="en")
 								button.contacts-btn__download Скачать реквизиты компании
 
 					.form 
-						.form-content
+						.form__content
 							.form__title
 								H2.fold__title-text.title-text Оставить заявку
-							.form-fields
-								.form-field.name 
-									input(type="text", placeholder="Имя")
-								.form-field.email 
-									input(type="text", placeholder="E-mail")
-								.form-field.phone 
-									input(type="text", placeholder="Телефон")
-								.form-field.about
-									input(type="text", placeholder="Расскажите о своем проекте")
+							.form__fields
+								.form__field.name 
+									input.form__field-input(type="text", placeholder="Имя")
+								.form__field.email 
+									input.form__field-input(type="text", placeholder="E-mail")
+								.form__field.phone 
+									input.form__field-input(type="text", placeholder="Телефон")
+								.form__field.about
+									input.form__field-input(
+										type="text",
+										placeholder="Расскажите о своем проекте"
+									)
 							.form__terms 
 								p.form__terms-text
 									| &Zcy;&acy;&pcy;&ocy;&lcy;&ncy;&yacy;&yacy; &fcy;&ocy;&rcy;&mcy;&ucy;, &vcy;&ycy; &scy;&ocy;&gcy;&lcy;&acy;&shcy;&acy;&iecy;&tcy;&iecy;&scy;&softcy; &ncy;&acy;

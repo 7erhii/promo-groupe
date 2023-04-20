@@ -35,15 +35,74 @@
 	font-weight: 800;
 	color: #333333;
 	& a {
-		color: #5d0707;
+		color: #020262;
 	}
+}
+.links {
+	margin-top: 10px;
+}
+.links a {
+	font-size: 13px;
+	font-weight: 800;
+	color: #0000ff;
+	text-decoration: underline;
+	line-height: 20px;
 }
 .box-mb {
 	margin-bottom: 30px;
+}
+
+.contacts-btn__download {
+	border: 2px solid #0000ff;
+	padding: 23px 14px;
+	text-align: center;
+	color: #0000ff;
+	font-size: 14px;
+	font-weight: 800;
 }
 // ______________FORM
 .form {
 	width: 50%;
 	// height: 100%;
-	background: rgba(172, 119, 119, 0.62);
+	&__fields {
+	}
+	&__field {
+		width: 100%;
+		&-input {
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid #9d9d9d;
+			background: inherit;
+			padding: 20px 15px 15px;
+			font-size: 16px;
+			color: #9d9d9d;
+			outline: none;
+
+			&:active {
+			}
+		}
+	}
+
+	&__terms {
+		font-size: 14px;
+		line-height: 22px;
+		letter-spacing: 2px;
+		font-weight: 300;
+		color: #4a4a4a;
+		margin-top: 40px;
+		max-width: 630px;
+	}
+}
+
+.form-btn {
+	&__send {
+		padding: 24px 40px;
+		background: #0000ff;
+		color: #ffffff;
+		margin-top: 20px;
+		cursor: pointer;
+		&:hover {
+			background: #2a2aeda6;
+		}
+	}
 }
